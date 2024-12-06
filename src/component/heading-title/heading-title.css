@@ -1,0 +1,13 @@
+
+.heading_title
+{
+    background-color: #fff;
+}
+
+.heading_title .title
+{
+    margin: 30px;
+    color: #1976d2bb;
+    font-size: 40px;
+    font-weight: bold;
+}

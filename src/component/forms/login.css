@@ -1,0 +1,31 @@
+.pass {
+  position: relative;
+}
+.hide-eye,
+.show-eye {
+    position: absolute;
+    right: 18vw;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    cursor: pointer;
+    color: #1976d2;
+}
+
+@media (max-width: 720px) {
+  form {
+    width: 90%;
+  }
+  input {
+    width: 100%;
+  }
+  .btn-login,
+  .btn-register {
+    width: 100%;
+  }
+  form .fa-eye, .fa-eye-slash
+  {
+    right: 0;
+  }
+}
+

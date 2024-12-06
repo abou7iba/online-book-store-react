@@ -1,0 +1,119 @@
+.book-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.book-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.book-slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.book-slider-item {
+  min-width: 310px; /* حجم الكارد */
+  margin-right: 15px; /* مسافة بين الكروت */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* ترتيب العناصر عموديًا */
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.book-slider-item:hover {
+  transform: translateY(-10px); /* حركة خفيفة عند التمرير */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-slider-item img {
+  height: 200px; /* ارتفاع موحد للصور */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.book-slider-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* مسافة بين العناصر */
+}
+
+.about-item p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.slider-action {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* مسافة بين الأيقونات */
+  margin-top: 10px;
+}
+
+.slider-action i {
+  font-size: 22px;
+  color: #3498db;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.slider-action i:hover {
+  color: #2980b9;
+  transform: scale(1.2);
+}
+
+.book-slider-arrow-left,
+.book-slider-arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #3498db;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.book-slider-arrow-left {
+  left: 10px;
+}
+
+.book-slider-arrow-right {
+  right: 10px;
+}
+
+.book-slider-arrow-left:hover,
+.book-slider-arrow-right:hover {
+  color: #2980b9;
+}
+.rating
+{
+  color: #2980b9;
+
+}
+
+@media (max-width: 768px) {
+  .book-slider-item {
+    min-width: 332px;
+    margin-right: 10px;
+  }
+
+}

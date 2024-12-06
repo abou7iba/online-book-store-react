@@ -1,0 +1,87 @@
+.cart
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    color: #1976d2;
+}
+
+.cart-info {
+    width: 95%;
+}
+.book
+{
+    text-align: center;
+}
+.book-info {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.book-image {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+}
+.price
+{
+    font-weight: 600;
+}
+.btn-qty
+{
+    color: #1976d2;
+    padding: 5px;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.btn-qty:disabled
+{
+    cursor: not-allowed;
+    color: grey;
+}
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1976d230;
+  border-radius: 14px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.subtotal
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    color: #1976d2;
+    padding: 10px;
+
+}
+.total
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}   
+
+.fa-trash
+{
+    cursor: pointer;
+    font-size: 20px;
+
+    color: red;
+}
+button
+{
+    background: none;
+    border: none;
+}

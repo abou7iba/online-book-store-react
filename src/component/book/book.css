@@ -1,0 +1,22 @@
+
+.book
+{
+  color: #1976d2;
+}
+.add-book-to-cart
+{
+    width: 70%;
+    background-color: #1976d2;
+    color: #fff;
+    font-weight: 600;
+    padding:  10px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+.qty-book-inpt
+{
+    width: 70%;
+    font-weight: 600;
+    padding:  10px 20px;
+    border-radius: 8px;
+}

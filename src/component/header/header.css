@@ -1,0 +1,155 @@
+.header {
+  height: 20vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+a{
+  text-decoration: none;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  border-bottom: 1px solid #ffffff52;
+}
+
+.header-top-right {
+  display: none;
+}
+
+.header-top-center {
+  position: relative;
+}
+.header-top-center i {
+  margin-right: 5px;
+}
+.cart-count
+{
+  position: absolute;
+  top: 32%;
+  transform: translate(-50% , -50%);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  color: #ffffff;
+  background: #ff2d55;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 15px;
+  
+}
+
+/* center */
+
+.header-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45%;
+  position: relative;
+  font-size: 22px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.header-center input {
+  width: 65vw;
+  padding: 5px;
+  border-radius: 5px;
+  height: 33px;
+  border: 0;
+}
+.header-center .sr-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 18%;
+  color: #00000045;
+  cursor: pointer;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid #1976d23f;
+}
+
+.navbar-links {
+  display: flex;
+}
+.navbar-link {
+  margin-right: 20px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.header-top-center-logo {
+  display: none;
+}
+@media (max-width: 720px) {
+  .header {
+    height: 15vh;
+  }
+  .header-top-center {
+    display: none;
+  }
+  .header-top-right {
+    display: block;
+  }
+  .header-top-center-logo {
+    display: block;
+  }
+  .navbar {
+    position: fixed;
+    left: -100%;
+    top: 40px;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  .navbar-link {
+    margin: 15px 0;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  .header-center {
+    height: 60%;
+  }
+  .header-center-right {
+    display: none;
+  }
+  .header-center .sr-icon {
+    right: 33%;
+  }
+}
+
+@media (max-width: 990px) {
+  .header-center {
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+}
